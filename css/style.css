@@ -98,15 +98,16 @@ body{
 .profile-img{
   width:190px;
   height:190px;
-  border-radius:50%;
-  overflow:hidden;
+  transform: scaleX(1.2);
+  /*border-radius:50%;
+  */overflow:hidden;
   z-index:2;
   box-shadow:0 8px 40px rgba(92,225,255,0.06), 0 0 30px rgba(84,140,255,0.06) inset;
   transform:translateY(-6px);
-  -webkit-transform:translateY(-6px);
-  -moz-transform:translateY(-6px);
-  -ms-transform:translateY(-6px);
-  -o-transform:translateY(-6px);
+  -webkit-transform: scaleX(1.2);
+  -moz-transform: scaleX(1.2);
+  -ms-transform: scaleX(1.2);
+  -o-transform: scaleX(1.2);
 }
 .profile-img img{
     width:100%; 
