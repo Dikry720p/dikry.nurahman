@@ -104,3 +104,9 @@ cta.addEventListener('click', (e)=>{
   const projects = document.querySelector('#projects');
   if(projects) projects.scrollIntoView({behavior:'smooth'});
 });
+
+  // Ketika tombol diklik, buka aplikasi email
+  document.getElementById('Btn').addEventListener('click', function() {
+    window.open("https://mail.google.com/mail/?view=cm&fs=1&to=dikrynurahman49@gmail.com&su=Kolaborasi%20Proyek&body=Halo%20Dikri,%0A%0ASaya%20ingin%20berdiskusi...", "_blank");
+
+  });
