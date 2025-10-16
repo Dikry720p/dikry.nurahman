@@ -21,8 +21,7 @@
   <script src="../js/script.js" defer></script>
 </head>
 
-<body>
-
+<body> 
   <div class="stars" id="stars"></div>
   <div class="stars2" id="stars2"></div>
   <div class="nebula" id="nebula"></div>
@@ -47,27 +46,289 @@
           <p class="tagline mt-2"> <span id="typed" class="typing"></span></p>
 
           <div class="mt-4">
-            <button class="btn btn-cta btn-lg" id="ctaBtn">
-              <i class="bi bi-rocket-fill"></i>
-              <span>Lihat Proyek</span>
-              <span class="btn-rocket">
-                <i class="rocket bi bi-rocket-takeoff-fill"></i>
-              </span>
-            </button>
+            <a href="#portfolio" class="btn btn-cta btn-lg" id="ctaBtn">
+                <i class="bi bi-rocket-fill"></i>
+                <span>Lihat Proyek</span>
+                <span class="btn-rocket">
+                  <i class="rocket bi bi-rocket-takeoff-fill"></i>
+                </span>
+              </a>
+              
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="tentangsaya">
-    <div class="container text-center">
-      <h2 class="mb-10">Latar Belakang</h2>
-      <p>
-        Saya adalah seorang Web Developer, UI/UX Designer, dan IoT Enthusiast yang berfokus pada pembuatan solusi digital modern yang menggabungkan estetika dan fungsionalitas. Dengan pengalaman dalam pengembangan aplikasi berbasis web serta integrasi sistem IoT, saya berkomitmen untuk menciptakan karya yang efisien, interaktif, dan bermanfaat bagi pengguna.
+<!-- About Me Section -->
+<section id="about" class="about-section" aria-labelledby="about-heading">
+    <div class="container">
+      <h2 id="about-heading" class="section-title">Tentang Saya</h2>
+  
+      <div class="about-grid">
+        <!-- Foto / Ilustrasi -->
+        <div class="about-photo">
+          <!-- Ganti src dengan foto-mu -->
+          <img src="images/profile.jpg" alt="Foto Nama Kamu" />
+        </div>
+  
+        <!-- Konten -->
+        <div class="about-content">
+          <!-- Perkenalan singkat -->
+          <p class="lead">
+            Hai — saya <strong>Nama Kamu</strong>, seorang <em>Fullstack Developer</em> & IoT enthusiast.
+            Saya berfokus pada pembangunan aplikasi web dan solusi IoT dari prototyping sampai deployment.
+          </p>
+  
+          <!-- Latar belakang pendidikan / pengalaman -->
+          <div class="card small">
+            <h3>Pendidikan & Pengalaman</h3>
+            <ul class="meta-list">
+              <li><strong>S1 Sistem Informasi</strong> — Universitas Contoh (2019)</li>
+              <li><strong>Junior Web Developer</strong> — PT. Contoh Teknologi (2020–2022)</li>
+              <li><strong>Project:</strong> Sistem Monitoring Energi berbasis ESP32 & Laravel</li>
+            </ul>
+          </div>
+  
+          <!-- Keahlian dan minat -->
+          <div class="card small">
+            <h3>Keahlian & Minat</h3>
+            <p class="skills-text">Frontend, Backend, Mobile (Flutter), IoT (ESP32), Database, DevOps ringan</p>
+  
+            <div class="skill">
+              <span>HTML & CSS</span>
+              <div class="skill-bar" aria-hidden="true"><div class="skill-level" style="width:90%"></div></div>
+            </div>
+  
+            <div class="skill">
+              <span>JavaScript / Vue / React</span>
+              <div class="skill-bar" aria-hidden="true"><div class="skill-level" style="width:65%"></div></div>
+            </div>
+  
+            <div class="skill">
+              <span>Laravel / PHP</span>
+              <div class="skill-bar" aria-hidden="true"><div class="skill-level" style="width:75%"></div></div>
+            </div>
+  
+            <div class="skill">
+              <span>IoT (ESP32)</span>
+              <div class="skill-bar" aria-hidden="true"><div class="skill-level" style="width:85%"></div></div>
+            </div>
+          </div>
+  
+          <!-- Download CV dan kontak singkat -->
+          <div class="actions">
+            <!-- Ganti href ke file CV-mu, contoh: /assets/cv-nama.pdf -->
+            <a class="btn btn-download" href="/assets/cv-nama.pdf" download="CV_Nama_Kamu.pdf">📄 Download CV</a>
+  
+            <!-- Link ke kontak / media sosial -->
+            <nav class="social-inline" aria-label="Kontak">
+              <a href="mailto:nama@contoh.com" title="Email">✉️ Email</a>
+              <a href="https://github.com/username" target="_blank" rel="noopener" title="GitHub">🐙 GitHub</a>
+              <a href="https://linkedin.com/in/username" target="_blank" rel="noopener" title="LinkedIn">🔗 LinkedIn</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Minimal CSS: tempel di file CSS utama atau <style> di head -->
+
+  </section>
+  <!-- Portfolio Section -->
+<section id="portfolio" class="portfolio-section" aria-labelledby="portfolio-heading">
+    <div class="container">
+      <h2 id="portfolio-heading" class="section-title">Portfolio / Projects</h2>
+      <p class="section-subtitle">
+        Beberapa proyek terbaik yang pernah saya kerjakan dalam bidang Web, Mobile, dan IoT.
       </p>
+  
+      <!-- Filter Buttons -->
+      <div class="portfolio-filters">
+        <button class="filter-btn active" data-filter="all">Semua</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="mobile">Mobile</button>
+        <button class="filter-btn" data-filter="iot">IoT</button>
+      </div>
+  
+      <!-- Portfolio Grid -->
+      <div class="portfolio-grid">
+        <!-- Project 1 -->
+        <div class="portfolio-item" data-category="web">
+          <img src="images/project1.jpg" alt="Sistem Monitoring Energi" class="portfolio-img" />
+          <div class="portfolio-info">
+            <h3>Sistem Monitoring Energi</h3>
+            <p>
+              Aplikasi web berbasis Laravel untuk memantau konsumsi energi listrik di laboratorium menggunakan sensor PZEM-004T dan ESP32.
+            </p>
+            <p><strong>Teknologi:</strong> Laravel, MySQL, ESP32</p>
+            <div class="portfolio-links">
+              <a href="https://github.com/username/energy-monitoring" target="_blank">GitHub</a>
+              <a href="https://example.com/demo1" target="_blank">Demo</a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Project 2 -->
+        <div class="portfolio-item" data-category="mobile">
+          <img src="images/project2.jpg" alt="Aplikasi Booking Flutter" class="portfolio-img" />
+          <div class="portfolio-info">
+            <h3>Aplikasi Booking</h3>
+            <p>
+              Aplikasi Flutter dengan sistem API Laravel untuk pemesanan ruang laboratorium secara online.
+            </p>
+            <p><strong>Teknologi:</strong> Flutter, Laravel API</p>
+            <div class="portfolio-links">
+              <a href="https://github.com/username/flutter-booking" target="_blank">GitHub</a>
+              <a href="https://example.com/demo2" target="_blank">Demo</a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Project 3 -->
+        <div class="portfolio-item" data-category="iot">
+          <img src="images/project3.jpg" alt="Smart Power Controller" class="portfolio-img" />
+          <div class="portfolio-info">
+            <h3>Smart Power Controller</h3>
+            <p>
+              Sistem IoT berbasis ESP32 dan relay untuk mengontrol serta memonitor perangkat listrik melalui website lokal.
+            </p>
+            <p><strong>Teknologi:</strong> ESP32, NodeMCU, REST API</p>
+            <div class="portfolio-links">
+              <a href="https://github.com/username/smart-controller" target="_blank">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- CSS -->
+
+  
+    <!-- JavaScript untuk filter -->
+    <script>
+      const filterBtns = document.querySelectorAll(".filter-btn");
+      const portfolioItems = document.querySelectorAll(".portfolio-item");
+  
+      filterBtns.forEach(btn => {
+        btn.addEventListener("click", () => {
+          const category = btn.dataset.filter;
+          filterBtns.forEach(b => b.classList.remove("active"));
+          btn.classList.add("active");
+  
+          portfolioItems.forEach(item => {
+            if (category === "all" || item.dataset.category === category) {
+              item.style.display = "block";
+            } else {
+              item.style.display = "none";
+            }
+          });
+        });
+      });
+    </script>
+  </section>
+  <!-- Experience & Education Section -->
+<section id="experience" class="experience-section" aria-labelledby="experience-heading">
+    <div class="container">
+      <h2 id="experience-heading" class="section-title">Pengalaman & Pendidikan</h2>
+      <p class="section-subtitle">
+        Riwayat pengalaman kerja, magang, serta pendidikan yang relevan dengan bidang saya.
+      </p>
+  
+      <div class="timeline">
+        <!-- Item 1: Pengalaman -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Web Developer — PT. Albasi Layung Indonesia</h3>
+            <span class="timeline-date">2023 – Sekarang</span>
+            <p>
+              Mengembangkan dan menguji fitur ERP berbasis Laravel seperti Cash Advance, Master Unit of Measurement,
+              serta integrasi sistem IoT dengan API internal.
+            </p>
+          </div>
+        </div>
+  
+        <!-- Item 2: Magang / Freelance -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Freelance Developer — Proyek IoT Rumah Pintar</h3>
+            <span class="timeline-date">2022 – 2023</span>
+            <p>
+              Merancang sistem kontrol dan monitoring perangkat listrik menggunakan ESP32, relay, dan sensor PZEM-004T
+              dengan tampilan dashboard berbasis web lokal.
+            </p>
+          </div>
+        </div>
+  
+        <!-- Item 3: Pendidikan -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Sarjana Komputer (S.Kom) — Universitas Galuh</h3>
+            <span class="timeline-date">2021 – 2025</span>
+            <p>
+              Lulus dengan fokus pada pengembangan aplikasi web dan Internet of Things (IoT). 
+              Skripsi: <em>“Sistem Monitoring dan Controlling Energi Listrik Berbasis IoT.”</em>
+            </p>
+          </div>
+        </div>
+
+  </section>
+  <!-- Certification Section -->
+<section id="certifications" class="certification-section" aria-labelledby="cert-heading">
+    <div class="container">
+      <h2 id="cert-heading" class="section-title">Sertifikasi & Pelatihan</h2>
+      <p class="section-subtitle">
+        Beberapa sertifikat yang saya peroleh dari pelatihan dan ujian kompetensi.
+      </p>
+  
+      <!-- Cards Grid -->
+      <div class="cert-grid">
+  
+        <!-- Card 1 -->
+        <div class="cert-card">
+          <img src="images/sertifikat-toefl.jpg" alt="Sertifikat TOEFL" class="cert-img" />
+          <div class="cert-content">
+            <h3>TOEFL ITP</h3>
+            <p class="cert-year">2022</p>
+            <p class="cert-desc">
+              Sertifikat kemampuan bahasa Inggris akademik dengan skor 530.
+            </p>
+            <a href="assets/sertifikat-toefl.pdf" target="_blank" class="btn-view">Lihat Sertifikat</a>
+          </div>
+        </div>
+  
+        <!-- Card 2 -->
+        <div class="cert-card">
+          <img src="images/sertifikat-laravel.jpg" alt="Sertifikat Laravel" class="cert-img" />
+          <div class="cert-content">
+            <h3>Pelatihan Laravel & REST API</h3>
+            <p class="cert-year">2022</p>
+            <p class="cert-desc">
+              Mengikuti pelatihan intensif pengembangan aplikasi web berbasis Laravel dan integrasi API.
+            </p>
+            <a href="assets/sertifikat-laravel.pdf" target="_blank" class="btn-view">Lihat Sertifikat</a>
+          </div>
+        </div>
+  
+        <!-- Card 3 -->
+        <div class="cert-card">
+          <img src="images/sertifikat-flutter.jpg" alt="Sertifikat Flutter" class="cert-img" />
+          <div class="cert-content">
+            <h3>Flutter App Development</h3>
+            <p class="cert-year">2023</p>
+            <p class="cert-desc">
+              Pelatihan pembuatan aplikasi mobile multiplatform menggunakan Flutter dan Firebase.
+            </p>
+            <a href="assets/sertifikat-flutter.pdf" target="_blank" class="btn-view">Lihat Sertifikat</a>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
+  
   <!-- shooting stars container (elements will be added by JS) -->
   <div id="shootingContainer"></div>
   <section id="contact" id="contact" class="py-5 text-white" style="background: url('../img/contac.jpeg') center/cover no-repeat;">
