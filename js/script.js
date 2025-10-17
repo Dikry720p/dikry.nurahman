@@ -127,18 +127,19 @@ cta.addEventListener('click', (e) => {
     setTimeout(() => dot.remove(), 1200);
   }
 
-  // scroll to projects if exists
+  // scroll to projects 
   const projects = document.querySelector('#projects');
   if (projects) projects.scrollIntoView({ behavior: 'smooth' });
 });
 
-// OPEN EMAIL on button click
-document.getElementById('Btn').addEventListener('click', function() {
-  window.open(
-    "https://mail.google.com/mail/?view=cm&fs=1&to=dikrynurahman49@gmail.com&su=Kolaborasi%20Proyek&body=Halo%20Dikri,%0A%0ASaya%20ingin%20berdiskusi...",
-    "_blank"
-  );
-});
+document.getElementById('Btn').addEventListener(
+  'click', function(){
+    window.open(
+      'https://mail.google.com/mail/?view=cm&fs=1&to=dikrynurahman49@gmail.com&su=kolaborasi%20proyek&body=Halo%20Dikry%2C%0ASaya%20saya%20ingin%20berdiskusi...',
+      '_blank'
+    )
+  }
+)
 
 // FILTER PORTFOLIO ITEMS
 const filterBtns = document.querySelectorAll(".filter-btn");
