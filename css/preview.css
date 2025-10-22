@@ -1,0 +1,19 @@
+/* Preview page specific tweaks to match the main theme */
+
+.hero .profile-img img {
+  border-radius: 12px;
+  box-shadow: 0 12px 40px rgba(2,8,23,0.35);
+}
+
+.project-gallery img.img-thumbnail {
+  border-radius: 10px;
+  border: none;
+}
+
+.card h2, .card h4 {
+  color: #cfe7ff;
+}
+
+@media (max-width: 768px) {
+  .project-gallery img.img-thumbnail { width: 48%; }
+}
