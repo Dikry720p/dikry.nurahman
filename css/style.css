@@ -282,7 +282,7 @@
   
   .section-subtitle {
     text-align: center;
-    color: #555;
+    color: #ffffff;
     margin-bottom: 1.5rem;
   }
   
@@ -381,18 +381,29 @@
     align-items: start;
   }
   
-  .about-photo img {
+  .profile-img2 img {
     width: 100%;
     border-radius: 12px;
     object-fit: cover;
     box-shadow: 0 6px 18px rgba(2,8,23,0.08);
+  }
+
+  /* Center image on mobile */
+  @media (max-width: 768px) {
+    .profile-img2 {
+      display: flex;
+      justify-content: center;
+    }
+    .profile-img2 {
+      margin: 0 auto;
+    }
   }
   
   .lead {
     margin: 0 0 0.75rem;
     font-size: 1rem;
     line-height: 1.5;
-    color: #222;
+    color: #ffffff;
   }
   
   .card.small {
@@ -515,18 +526,18 @@
   .timeline-content h3 {
     margin: 0;
     font-size: 1.1rem;
-    color: #111827;
+    color: #c5d7ff;
   }
   
   .timeline-date {
     font-size: 0.9rem;
-    color: #6b7280;
+    color: #ffffff;
     margin-bottom: 0.5rem;
   }
   
   .timeline-content p {
     font-size: 0.95rem;
-    color: #374151;
+    color: #d2d2d3;
     margin: 0;
     line-height: 1.5;
   }
@@ -749,6 +760,29 @@
     color: #fff;
   }
 
+.contact {
+  /* Layer a subtle dark-to-transparent gradient over the image so it
+     blends smoothly with the page background. Adjust colors/opacity as needed. */
+  background:
+    linear-gradient(180deg, rgba(2,2,20,0.85) 0%, rgba(10,10,30,0.55) 60%, rgba(2,2,20,0.85) 100%),
+    url('../img/contac.png') center / cover no-repeat;
+  background-blend-mode: overlay;
+}
+  .media {
+    border: none;
+    background: #f0f0f0;
+    color: #333;
+    padding: 0.5rem 1rem;
+    margin: 0 0.25rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+.medsos :hover{
+      background: #111827;
+    color: #fff;
+}
   footer {
     text-align: center;
     padding: 1.5rem 1rem;
