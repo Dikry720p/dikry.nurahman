@@ -140,6 +140,38 @@ document.getElementById('Btn').addEventListener(
     )
   }
 )
+document.getElementById('github').addEventListener(
+  'click', function(){
+    window.open(
+      'https://github.com/dikry720p',
+      '_blank'
+    )
+  }
+)
+document.getElementById('instagram').addEventListener(
+  'click', function(){
+    window.open(
+      'https://www.instagram.com/bucket_.man/',
+      '_blank'
+    )
+  }
+)
+document.getElementById('tiktok').addEventListener(
+  'click', function(){
+    window.open(
+      'https://www.tiktok.com/@bucketman.corp?is_from_webapp=1&sender_device=pc',
+      '_blank'
+    )
+  }
+)
+document.getElementById('discord').addEventListener(
+  'click', function(){
+    window.open(
+      'https://discordapp.com/users/1167447930215616593',
+      '_blank'
+    )
+  }
+)
 
 // FILTER PORTFOLIO ITEMS
 const filterBtns = document.querySelectorAll(".filter-btn");
